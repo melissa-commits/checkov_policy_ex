@@ -1,0 +1,14 @@
+metadata:
+  id: "CKV2_CUSTOM_1"
+  name: "sku standard azure cognitive"
+  category: "GENERAL_SECURITY"
+  severity: "HIGH"
+
+definition:
+     cond_type: "attribute"
+     resource_types:
+     - "azurerm_cognitive_account"
+     attribute: "sku_name"
+     operator: "equals"
+     value: "S0"
+  
